@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="LocateMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeO-jm-p6b" customClass="MGLMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mvf-7c-QQp"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Gx-Xp-srz">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geolocate" translatesAutoresizingMaskIntoConstraints="NO" id="Nxo-lh-owZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaC-G3-olf">
+                                        <rect key="frame" x="120" y="66" width="46" height="30"/>
+                                        <connections>
+                                            <action selector="geolocateUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6C-Ji-Pfn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nxo-lh-owZ" firstAttribute="top" secondItem="8Gx-Xp-srz" secondAttribute="top" constant="8" id="1az-AL-Ci7"/>
+                                    <constraint firstAttribute="bottom" secondItem="jaC-G3-olf" secondAttribute="bottom" id="9Vx-Vz-NIn"/>
+                                    <constraint firstItem="jaC-G3-olf" firstAttribute="leading" secondItem="8Gx-Xp-srz" secondAttribute="leading" id="ABd-4s-Vdl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nxo-lh-owZ" secondAttribute="bottom" constant="8" id="ALz-Ys-4UE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nxo-lh-owZ" secondAttribute="trailing" constant="8" id="Iza-4D-dxL"/>
+                                    <constraint firstItem="jaC-G3-olf" firstAttribute="top" secondItem="8Gx-Xp-srz" secondAttribute="top" id="Rri-Iy-wO4"/>
+                                    <constraint firstItem="Nxo-lh-owZ" firstAttribute="leading" secondItem="8Gx-Xp-srz" secondAttribute="leading" constant="8" id="bIx-GQ-T1V"/>
+                                    <constraint firstAttribute="height" constant="50" id="gdy-0s-2Jo"/>
+                                    <constraint firstAttribute="trailing" secondItem="jaC-G3-olf" secondAttribute="trailing" id="nRx-Zp-yBT"/>
+                                    <constraint firstAttribute="width" constant="50" id="uH9-yk-OVa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SeO-jm-p6b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MRF-md-03j"/>
+                            <constraint firstItem="SeO-jm-p6b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TM5-Hs-zL8"/>
+                            <constraint firstItem="SeO-jm-p6b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ahL-wW-3tc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Gx-Xp-srz" secondAttribute="trailing" constant="20" id="dxN-C9-Q9Y"/>
+                            <constraint firstItem="SeO-jm-p6b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g4T-bh-rD7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Gx-Xp-srz" secondAttribute="bottom" constant="60" id="q7P-kI-n0d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="SeO-jm-p6b" id="cSw-OS-CUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="geolocate" width="248" height="248"/>
+    </resources>
+</document>
