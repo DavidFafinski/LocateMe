@@ -1,12 +1,15 @@
 PODS:
-  - Mapbox-iOS-SDK (3.7.0)
+  - Mapbox-iOS-SDK (3.7.6)
+  - MapboxGeocoder.swift (0.8.1)
 
 DEPENDENCIES:
-  - Mapbox-iOS-SDK (~> 3.7)
+  - Mapbox-iOS-SDK (~> 3.7.6)
+  - MapboxGeocoder.swift (~> 0.8)
 
 SPEC CHECKSUMS:
-  Mapbox-iOS-SDK: 699818d30e1ed4985d3efc6a06c40b90907c586d
+  Mapbox-iOS-SDK: 23ececda1d90c3b436b45e2c88e9677f025303c0
+  MapboxGeocoder.swift: 354fccd4834bae4c5b792428559eb87d994d2cf5
 
-PODFILE CHECKSUM: 41c16896c709337e6d9e36510cb93c5c7ec176e5
+PODFILE CHECKSUM: d3020eef26b704114896614a486a9f15c1490e32
 
 COCOAPODS: 1.4.0

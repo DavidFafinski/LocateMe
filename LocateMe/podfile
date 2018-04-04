@@ -2,8 +2,10 @@ platform :ios, '9.0'
 
 def locateMePods
 	pod 'Mapbox-iOS-SDK', '~> 3.7.6'
+    pod 'MapboxGeocoder.swift', '~> 0.8'
 end 
 
 target 'LocateMe' do
+    use_frameworks!
 	locateMePods
 end
