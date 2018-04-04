@@ -36,4 +36,23 @@ class PlaceManager {
             completion(result.map {Place(placesDictionary: $0.addressDictionary as! [String: Any], latitude: $0.location!.coordinate.latitude, longitude: $0.location!.coordinate.longitude)})
         }
     }
+
+    func savePlace(place: Place) {
+        var places = getSavedPlaces()
+        if (places.count >= 2) {
+            places.removeLast()
+        }
+        places.insert(place, at: 0)
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(NSKeyedArchiver.archivedData(withRootObject: places), forKey: "placesHistory")
+    }
+
+    func getSavedPlaces() -> [Place] {
+        let userDefaults = UserDefaults.standard
+        if let places = userDefaults.value(forKey: "placesHistory") as? Data {
+            return NSKeyedUnarchiver.unarchiveObject(with: places) as! [Place]
+        } else {
+            return []
+        }
+    }
 }

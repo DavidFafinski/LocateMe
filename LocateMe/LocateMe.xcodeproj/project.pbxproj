@@ -16,6 +16,7 @@
 		25A2BF882073DA0500ADE45F /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF872073DA0500ADE45F /* PlaceManager.swift */; };
 		25A2BF8A2073DB5600ADE45F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF892073DB5600ADE45F /* Place.swift */; };
 		25A2BF8C2073DE2100ADE45F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8B2073DE2100ADE45F /* DataManager.swift */; };
+		25A2BF8E2074DB1500ADE45F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8D2074DB1500ADE45F /* Constants.swift */; };
 		B75D6A7CFE74D7FB194C1B92 /* Pods_LocateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		25A2BF872073DA0500ADE45F /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 		25A2BF892073DB5600ADE45F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		25A2BF8B2073DE2100ADE45F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		25A2BF8D2074DB1500ADE45F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E437FBA6D0C5AB2484528FF /* Pods-LocateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocateMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocateMe/Pods-LocateMe.debug.xcconfig"; sourceTree = "<group>"; };
 		98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocateMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				250B31852073C23200707AEB /* Assets.xcassets */,
 				2569B34D2073996600B70A5E /* LaunchScreen.storyboard */,
 				2569B3502073996600B70A5E /* Info.plist */,
+				25A2BF8D2074DB1500ADE45F /* Constants.swift */,
 			);
 			path = LocateMe;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				25A2BF8C2073DE2100ADE45F /* DataManager.swift in Sources */,
 				25A2BF882073DA0500ADE45F /* PlaceManager.swift in Sources */,
 				2569B3452073996600B70A5E /* AppDelegate.swift in Sources */,
+				25A2BF8E2074DB1500ADE45F /* Constants.swift in Sources */,
 				25A2BF862073D69B00ADE45F /* SuggestionTableViewCell.swift in Sources */,
 				25A2BF8A2073DB5600ADE45F /* Place.swift in Sources */,
 			);

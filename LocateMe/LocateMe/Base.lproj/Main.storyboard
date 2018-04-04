@@ -58,31 +58,34 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-Cx-ehN">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="173" y="323.5" width="28" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="EJf-ca-hyf"/>
                                     <constraint firstAttribute="height" constant="40" id="pFO-Vt-PPt"/>
                                 </constraints>
                             </imageView>
                             <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ix-EO-X3q" userLabel="TableView">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j45-q8-QPJ">
-                                        <rect key="frame" x="-68" y="-202" width="375" height="532"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="66" id="yPq-tM-KY5" customClass="SuggestionTableViewCell" customModule="LocateMe" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yPq-tM-KY5" id="IZL-zu-4bd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-XP-GPw">
-                                                            <rect key="frame" x="20" y="0.0" width="335" height="43.5"/>
+                                                            <rect key="frame" x="20" y="0.0" width="335" height="65.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -116,13 +119,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOy-Ux-lEB" userLabel="BackButton">
-                                <rect key="frame" x="16" y="20" width="41" height="54"/>
+                                <rect key="frame" x="15" y="30" width="40" height="44"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="epM-b0-cdE">
-                                        <rect key="frame" x="-100" y="-37" width="240" height="128"/>
+                                        <rect key="frame" x="10" y="10" width="20" height="24"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRv-vx-qxf">
-                                        <rect key="frame" x="-3" y="12" width="46" height="30"/>
+                                        <rect key="frame" x="-0.5" y="0.0" width="40" height="44"/>
                                         <connections>
                                             <action selector="hideSuggestionList" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntS-oU-aZ1"/>
                                         </connections>
@@ -148,19 +151,19 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" red="0.72965916450777202" green="0.72965916450777202" blue="0.72965916450777202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-5g-0it">
-                                <rect key="frame" x="94" y="40" width="261" height="44"/>
+                                <rect key="frame" x="15" y="30" width="340" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="17n-xs-LR1"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="NjX-5r-wzr"/>
                                 </connections>
@@ -190,6 +193,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backViewButton" destination="YOy-Ux-lEB" id="FJT-PW-Wjz"/>
                         <outlet property="centerPin" destination="5sY-Cx-ehN" id="UeD-Ur-QHP"/>
                         <outlet property="heightTableViewHideConstraint" destination="3yG-bk-N1k" id="aKt-ef-Q9O"/>
                         <outlet property="heightTableViewShownConstraint" destination="pWW-O1-Dlf" id="x61-uM-SBY"/>

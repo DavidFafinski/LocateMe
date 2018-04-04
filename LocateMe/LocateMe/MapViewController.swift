@@ -12,6 +12,7 @@ import Mapbox
 class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView: MGLMapView!
+    @IBOutlet weak var backViewButton: UIView!
     @IBOutlet weak var centerPin: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var suggestionTableView: UITableView!
@@ -39,6 +40,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        backViewButton.layer.borderColor = #colorLiteral(red: 0.6990365933, green: 0.6990365933, blue: 0.6990365933, alpha: 1)
     }
 
     func addPinAtCoordinate(latitude: Double, longitude: Double) {
@@ -104,6 +106,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         showSuggestionList()
+        placeList = dataManager.placeManager.getSavedPlaces()
+        suggestionTableView.reloadData()
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -142,7 +146,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         searchTextField.text = place.printableAddress
         self.hideSuggestionList()
         self.centerMap(latitude: place.latitude, longitude: place.longitude)
-        //self.addPinAtCoordinate(latitude: place.latitude!, longitude: place.longitude!)
     }
 
     func mapView(_ mapView: MGLMapView, regionDidChangeWith reason: MGLCameraChangeReason, animated: Bool) {
@@ -150,7 +153,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
                 guard let _ = place else {
                     return
                 }
-                self.searchTextField.text = place?.printableAddress
+                self.searchTextField.text = place!.printableAddress
+                dataManager.placeManager.savePlace(place: place!)
             }
     }
 
