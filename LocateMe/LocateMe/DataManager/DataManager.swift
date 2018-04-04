@@ -13,7 +13,7 @@ class DataManager {
     let placeManager: PlaceManager
 
     init() {
-        placeManager = PlaceManager()
+        placeManager = PlaceManager(placeSAL: PlaceMapboxServices(), placeDAL: PlaceUserDefaultStorage())
     }
 
 }

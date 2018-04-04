@@ -24,14 +24,13 @@ class Place : NSObject, NSCoding {
     var postalCode: String?
     var latitude: Double?
     var longitude: Double?
-    var dataPlace: Data? {
-        get {
-            return NSKeyedArchiver.archivedData(withRootObject: self)
-        }
-    }
     var printableAddress: String! {
         get {
-             return printableStreet + ", " + printableCity
+            if printableStreet != "" {
+                return printableStreet + ", " + printableCity
+            } else {
+                return printableCity
+            }
         }
     }
     var printableStreet: String {

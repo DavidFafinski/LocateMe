@@ -77,7 +77,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="66" id="yPq-tM-KY5" customClass="SuggestionTableViewCell" customModule="LocateMe" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="66" id="yPq-tM-KY5" customClass="PlaceTableViewCell" customModule="LocateMe" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yPq-tM-KY5" id="IZL-zu-4bd">
@@ -99,7 +99,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="suggestionLabel" destination="e1U-XP-GPw" id="lxg-vT-Pp3"/>
+                                                    <outlet property="placeLabel" destination="e1U-XP-GPw" id="N0r-V5-YZF"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

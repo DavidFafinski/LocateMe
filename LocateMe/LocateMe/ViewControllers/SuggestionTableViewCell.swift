@@ -1,5 +1,5 @@
 //
-//  SuggestionTableViewCell.swift
+//  PlaceTableViewCell.swift
 //  LocateMe
 //
 //  Created by David Fafinski on 03/04/2018.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SuggestionTableViewCell: UITableViewCell {
+class PlaceTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var suggestionLabel: UILabel!
+    @IBOutlet weak var placeLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
