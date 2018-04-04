@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Mapbox
+import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet weak var mapView: MGLMapView!
+    @IBOutlet weak var mapView: UIView!
     @IBOutlet weak var backViewButton: UIView!
     @IBOutlet weak var centerPin: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
@@ -23,8 +23,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var leftSearchWithoutBackConstraint: NSLayoutConstraint!
     fileprivate var _placeList: [Place] = []
     fileprivate var _locationManager = CLLocationManager()
-    fileprivate var _userLocation : MGLPointAnnotation?
-    fileprivate var _userLocationCoordinate : CLLocationCoordinate2D!
+    fileprivate var _mapViewContainer: MapViewContainer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +31,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         _locationManager.delegate = self
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest
         backViewButton.layer.borderColor = #colorLiteral(red: 0.6990365933, green: 0.6990365933, blue: 0.6990365933, alpha: 1)
+        _mapViewContainer = MapViewContainer(map: mapView, delegate: self)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +61,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 present(alert, animated: true, completion: nil)
             }
         } else {
-            mapView.setCenter(CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), zoomLevel: 9, animated: true)
+            _mapViewContainer.centerMap(latitude: latitude!, longitude: longitude!)
         }
     }
 
@@ -102,27 +102,32 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 }
+//
+//extension MapViewController : MGLMapViewDelegate {
+//    func mapView(_ mapView: MGLMapView, regionDidChangeWith reason: MGLCameraChangeReason, animated: Bool) {
+//        dataManager.placeManager.geocodePlace(latitude: mapView.latitude, longitude: mapView.longitude) { (place) in
+//            guard let _ = place else {
+//                return
+//            }
+//            self.searchTextField.text = place!.printableAddress
+//        }
+//    }
+//
+//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+//        view.endEditing(true)
+//    }
+//
+//
+//}
 
-extension MapViewController : MGLMapViewDelegate {
-    func mapView(_ mapView: MGLMapView, regionDidChangeWith reason: MGLCameraChangeReason, animated: Bool) {
-        dataManager.placeManager.geocodePlace(latitude: mapView.latitude, longitude: mapView.longitude) { (place) in
-            guard let _ = place else {
-                return
-            }
-            self.searchTextField.text = place!.printableAddress
-        }
+extension MapViewController : MapProtocol {
+
+    func regionDidChange(placeName: String) {
+        searchTextField.text = placeName
     }
 
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    func didEndScroll() {
         view.endEditing(true)
-    }
-
-    func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
-        var annotationImage = mapView.dequeueReusableAnnotationImage(withIdentifier: "pin")
-        if(annotationImage == nil) {
-            annotationImage = MGLAnnotationImage(image: #imageLiteral(resourceName: "pin"), reuseIdentifier: "pin")
-        }
-        return annotationImage
     }
 }
 
@@ -132,9 +137,9 @@ extension MapViewController : UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = suggestionTableView.dequeueReusableCell(withIdentifier: "placeCell")! as! SuggestionTableViewCell
+        let cell = suggestionTableView.dequeueReusableCell(withIdentifier: "placeCell")! as! PlaceTableViewCell
         let place = _placeList[indexPath.row]
-        cell.suggestionLabel.text = place.printableAddress
+        cell.placeLabel.text = place.printableAddress
         return cell
     }
 

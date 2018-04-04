@@ -11,11 +11,15 @@
 		252D4E4D2074F34600603865 /* PlaceMapboxServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E4C2074F34600603865 /* PlaceMapboxServices.swift */; };
 		252D4E502074F45100603865 /* PlaceUserDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E4F2074F45100603865 /* PlaceUserDefaultStorage.swift */; };
 		252D4E582075071B00603865 /* LocateMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E572075071B00603865 /* LocateMeTests.swift */; };
+		252D4E60207509A400603865 /* MapViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E5F207509A400603865 /* MapViewContainer.swift */; };
+		252D4E6220750AAB00603865 /* MapboxContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E6120750AAB00603865 /* MapboxContainer.swift */; };
+		252D4E6520751BEC00603865 /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E6420751BEC00603865 /* PlaceTests.swift */; };
+		252D4E6620751DFC00603865 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF892073DB5600ADE45F /* Place.swift */; };
 		2569B3452073996600B70A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569B3442073996600B70A5E /* AppDelegate.swift */; };
 		2569B3472073996600B70A5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569B3462073996600B70A5E /* MapViewController.swift */; };
 		2569B34A2073996600B70A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569B3482073996600B70A5E /* Main.storyboard */; };
 		2569B34F2073996600B70A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569B34D2073996600B70A5E /* LaunchScreen.storyboard */; };
-		25A2BF862073D69B00ADE45F /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF852073D69B00ADE45F /* SuggestionTableViewCell.swift */; };
+		25A2BF862073D69B00ADE45F /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF852073D69B00ADE45F /* PlaceTableViewCell.swift */; };
 		25A2BF882073DA0500ADE45F /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF872073DA0500ADE45F /* PlaceManager.swift */; };
 		25A2BF8A2073DB5600ADE45F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF892073DB5600ADE45F /* Place.swift */; };
 		25A2BF8C2073DE2100ADE45F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8B2073DE2100ADE45F /* DataManager.swift */; };
@@ -41,13 +45,16 @@
 		252D4E552075071A00603865 /* LocateMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocateMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		252D4E572075071B00603865 /* LocateMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateMeTests.swift; sourceTree = "<group>"; };
 		252D4E592075071B00603865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252D4E5F207509A400603865 /* MapViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewContainer.swift; sourceTree = "<group>"; };
+		252D4E6120750AAB00603865 /* MapboxContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxContainer.swift; sourceTree = "<group>"; };
+		252D4E6420751BEC00603865 /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
 		2569B3412073996600B70A5E /* LocateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2569B3442073996600B70A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2569B3462073996600B70A5E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2569B3492073996600B70A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2569B34E2073996600B70A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2569B3502073996600B70A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25A2BF852073D69B00ADE45F /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
+		25A2BF852073D69B00ADE45F /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		25A2BF872073DA0500ADE45F /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 		25A2BF892073DB5600ADE45F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		25A2BF8B2073DE2100ADE45F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -99,7 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				2569B3462073996600B70A5E /* MapViewController.swift */,
-				25A2BF852073D69B00ADE45F /* SuggestionTableViewCell.swift */,
+				252D4E5F207509A400603865 /* MapViewContainer.swift */,
+				25A2BF852073D69B00ADE45F /* PlaceTableViewCell.swift */,
+				252D4E6320750BEE00603865 /* Mapbox */,
 				2569B3482073996600B70A5E /* Main.storyboard */,
 			);
 			path = ViewControllers;
@@ -125,9 +134,18 @@
 			isa = PBXGroup;
 			children = (
 				252D4E572075071B00603865 /* LocateMeTests.swift */,
+				252D4E6420751BEC00603865 /* PlaceTests.swift */,
 				252D4E592075071B00603865 /* Info.plist */,
 			);
 			path = LocateMeTests;
+			sourceTree = "<group>";
+		};
+		252D4E6320750BEE00603865 /* Mapbox */ = {
+			isa = PBXGroup;
+			children = (
+				252D4E6120750AAB00603865 /* MapboxContainer.swift */,
+			);
+			path = Mapbox;
 			sourceTree = "<group>";
 		};
 		2569B3382073996600B70A5E = {
@@ -345,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252D4E6620751DFC00603865 /* Place.swift in Sources */,
 				252D4E582075071B00603865 /* LocateMeTests.swift in Sources */,
+				252D4E6520751BEC00603865 /* PlaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,13 +374,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2569B3472073996600B70A5E /* MapViewController.swift in Sources */,
+				252D4E6220750AAB00603865 /* MapboxContainer.swift in Sources */,
 				25A2BF8C2073DE2100ADE45F /* DataManager.swift in Sources */,
 				25A2BF882073DA0500ADE45F /* PlaceManager.swift in Sources */,
 				2569B3452073996600B70A5E /* AppDelegate.swift in Sources */,
 				252D4E4D2074F34600603865 /* PlaceMapboxServices.swift in Sources */,
+				252D4E60207509A400603865 /* MapViewContainer.swift in Sources */,
 				252D4E502074F45100603865 /* PlaceUserDefaultStorage.swift in Sources */,
 				25A2BF8E2074DB1500ADE45F /* Constants.swift in Sources */,
-				25A2BF862073D69B00ADE45F /* SuggestionTableViewCell.swift in Sources */,
+				25A2BF862073D69B00ADE45F /* PlaceTableViewCell.swift in Sources */,
 				25A2BF8A2073DB5600ADE45F /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

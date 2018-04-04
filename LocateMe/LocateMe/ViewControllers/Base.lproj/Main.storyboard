@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Delegate-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="LocateMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,15 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeO-jm-p6b" customClass="MGLMapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iv7-1T-S1L">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.18039215689999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v10"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mvf-7c-QQp"/>
-                                </connections>
+                                <color key="backgroundColor" red="0.76119704312303882" green="0.89342730719657648" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Gx-Xp-srz" userLabel="GeolocateButton">
                                 <rect key="frame" x="305" y="557" width="50" height="50"/>
@@ -153,7 +147,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-5g-0it">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-5g-0it">
                                 <rect key="frame" x="15" y="30" width="340" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="17n-xs-LR1"/>
@@ -171,20 +165,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0Ix-EO-X3q" firstAttribute="top" secondItem="SeO-jm-p6b" secondAttribute="top" id="7A7-iF-vlo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2lX-5g-0it" secondAttribute="trailing" constant="20" id="CbX-Vi-cLZ"/>
                             <constraint firstItem="5sY-Cx-ehN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GXL-Og-Ric"/>
-                            <constraint firstItem="SeO-jm-p6b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MRF-md-03j"/>
+                            <constraint firstItem="iv7-1T-S1L" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hq5-PW-VMR"/>
+                            <constraint firstItem="iv7-1T-S1L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L5p-0h-8bp"/>
                             <constraint firstItem="YOy-Ux-lEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="NBf-bz-FLd"/>
                             <constraint firstItem="2lX-5g-0it" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="R3q-Pd-X3Q"/>
-                            <constraint firstItem="SeO-jm-p6b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TM5-Hs-zL8"/>
-                            <constraint firstItem="SeO-jm-p6b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ahL-wW-3tc"/>
+                            <constraint firstItem="iv7-1T-S1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XOx-w7-AWd"/>
+                            <constraint firstItem="0Ix-EO-X3q" firstAttribute="top" secondItem="iv7-1T-S1L" secondAttribute="top" id="YD1-nJ-KTO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Gx-Xp-srz" secondAttribute="trailing" constant="20" id="dxN-C9-Q9Y"/>
                             <constraint firstItem="2lX-5g-0it" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="100" constant="70" id="fKx-Wr-Q15"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ix-EO-X3q" secondAttribute="trailing" id="fYS-iN-C5V"/>
-                            <constraint firstItem="SeO-jm-p6b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g4T-bh-rD7"/>
                             <constraint firstItem="5sY-Cx-ehN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gz9-hH-mnA"/>
                             <constraint firstItem="YOy-Ux-lEB" firstAttribute="centerY" secondItem="2lX-5g-0it" secondAttribute="centerY" id="hno-T2-C7N"/>
+                            <constraint firstItem="iv7-1T-S1L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p7S-UG-cYZ"/>
                             <constraint firstItem="0Ix-EO-X3q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="pWW-O1-Dlf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Gx-Xp-srz" secondAttribute="bottom" constant="60" id="q7P-kI-n0d"/>
                             <constraint firstItem="0Ix-EO-X3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="siv-hM-D6C"/>
@@ -199,7 +193,7 @@
                         <outlet property="heightTableViewShownConstraint" destination="pWW-O1-Dlf" id="x61-uM-SBY"/>
                         <outlet property="leftSearchWithBackConstraint" destination="fKx-Wr-Q15" id="m2d-lC-4Uo"/>
                         <outlet property="leftSearchWithoutBackConstraint" destination="sqc-Dh-jN9" id="Cbf-7B-mHN"/>
-                        <outlet property="mapView" destination="SeO-jm-p6b" id="cSw-OS-CUb"/>
+                        <outlet property="mapView" destination="iv7-1T-S1L" id="x4c-gM-Iam"/>
                         <outlet property="searchTextField" destination="2lX-5g-0it" id="aQb-rZ-Lem"/>
                         <outlet property="suggestionTableView" destination="j45-q8-QPJ" id="hLs-8k-zTB"/>
                         <outlet property="suggestionView" destination="0Ix-EO-X3q" id="0q9-Wg-SAl"/>

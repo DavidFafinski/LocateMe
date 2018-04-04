@@ -59,6 +59,15 @@ class Place : NSObject, NSCoding {
         }
     }
 
+    init(streetName: String, streetNumber: String, city: String, postalCode: String, longitude: Double, latitude: Double) {
+        self.streetName = streetName
+        self.streetNumber = streetNumber
+        self.city = city
+        self.postalCode = postalCode
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+
     init(placesDictionary: [String: Any], latitude: Double, longitude: Double) {
         self.streetNumber = placesDictionary[kStreetNumber] as? String
         self.streetName = placesDictionary[kStreetName] as? String
