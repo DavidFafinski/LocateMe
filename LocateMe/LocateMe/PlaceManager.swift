@@ -13,6 +13,17 @@ class PlaceManager {
 
     private let geocoder = Geocoder.shared
 
+    func geocodePlace(latitude: Double, longitude: Double, completion:@escaping (Place?) -> Void) {
+        let options = ReverseGeocodeOptions(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+        geocoder.geocode(options) { (placemarks, attribution, error) in
+            guard let placemark = placemarks?.first else {
+                completion(nil)
+                return
+            }
+            completion(Place(placesDictionary: placemark.addressDictionary as! [String: Any], latitude: latitude, longitude: longitude))
+        }
+    }
+
     func searchPlaces(place: String, completion:@escaping ([Place]) -> Void) {
         let options = ForwardGeocodeOptions(query: place)
         options.allowedScopes = [.address, .pointOfInterest]

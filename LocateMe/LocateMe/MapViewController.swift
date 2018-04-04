@@ -12,17 +12,20 @@ import Mapbox
 class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView: MGLMapView!
+    @IBOutlet weak var centerPin: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var suggestionTableView: UITableView!
+    @IBOutlet weak var suggestionView: UIView!
     @IBOutlet weak var heightTableViewShownConstraint: NSLayoutConstraint!
     @IBOutlet weak var heightTableViewHideConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leftSearchWithBackConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leftSearchWithoutBackConstraint: NSLayoutConstraint!
     private var placeList: [Place] = []
     fileprivate var locationManager = CLLocationManager()
     fileprivate var userLocation : MGLPointAnnotation?
     var _userLocationCoordinate : CLLocationCoordinate2D!
     fileprivate var userLocationCoordinate : CLLocationCoordinate2D {
         set {
-            addPinAtCoordinate(latitude: newValue.latitude, longitude: newValue.longitude)
             centerMap(latitude: newValue.latitude, longitude: newValue.longitude)
             _userLocationCoordinate = newValue
         }
@@ -137,27 +140,46 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         let place = placeList[indexPath.row]
         view.endEditing(true)
         searchTextField.text = place.printableAddress
-        UIView.animate(withDuration: 0.3, animations: {
-            self.heightTableViewHideConstraint.priority = .defaultHigh
-            self.heightTableViewShownConstraint.priority = .defaultLow
-        }) { (finished) in
-            self.centerMap(latitude: place.latitude, longitude: place.longitude)
-            self.addPinAtCoordinate(latitude: place.latitude!, longitude: place.longitude!)
-        }
+        self.hideSuggestionList()
+        self.centerMap(latitude: place.latitude, longitude: place.longitude)
+        //self.addPinAtCoordinate(latitude: place.latitude!, longitude: place.longitude!)
     }
 
+    func mapView(_ mapView: MGLMapView, regionDidChangeWith reason: MGLCameraChangeReason, animated: Bool) {
+            dataManager.placeManager.geocodePlace(latitude: mapView.latitude, longitude: mapView.longitude) { (place) in
+                guard let _ = place else {
+                    return
+                }
+                self.searchTextField.text = place?.printableAddress
+            }
+    }
 
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         view.endEditing(true)
+    }
+
+    @IBAction func hideSuggestionList() {
+        view.endEditing(true)
+        UIView.animate(withDuration: 0.3) {
+            self.heightTableViewHideConstraint.priority = .defaultHigh
+            self.heightTableViewShownConstraint.priority = .defaultLow
+            self.leftSearchWithBackConstraint.priority = UILayoutPriority(100.0)
+            self.leftSearchWithoutBackConstraint.priority = UILayoutPriority(800.0)
+            self.suggestionView.alpha = 0
+            self.view.layoutIfNeeded()
+        }
     }
 
     func showSuggestionList() {
         UIView.animate(withDuration: 0.3) {
             self.heightTableViewHideConstraint.priority = .defaultLow
             self.heightTableViewShownConstraint.priority = .defaultHigh
+            self.leftSearchWithBackConstraint.priority = UILayoutPriority(800.0)
+            self.leftSearchWithoutBackConstraint.priority = UILayoutPriority(100.0)
+            self.suggestionView.alpha = 1
+            self.view.layoutIfNeeded()
         }
     }
-
 
 
 }
