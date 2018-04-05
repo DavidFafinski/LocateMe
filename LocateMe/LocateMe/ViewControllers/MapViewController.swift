@@ -77,7 +77,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if (status == .authorizedWhenInUse) {
+        if status == .authorizedWhenInUse {
             centerMap()
         }
     }
