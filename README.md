@@ -7,7 +7,7 @@ LocateMe is a light application for iOS devices witch helps you find an address 
 
 TL;DR : Click on this link from your iDevice to download and install the app : https://i.diawi.com/au2NqP
 
-***To install this map, you must first authorise the installation of foreigns application. Go to your Settings -> General -> Profils and click on INEAT Conseil Distribution -> Allow installation.***
+***To install this app, you must first authorise the installation of foreigns application. Go to your Settings -> General -> Profils and click on trust INEAT Conseil Distribution -> Allow installation.***
 
 # What's LocateMe?!
 
