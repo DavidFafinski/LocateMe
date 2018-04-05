@@ -5,12 +5,13 @@ LocateMe is a light application for iOS devices witch helps you find an address 
 
 ![Logo LocateMe](https://image.noelshack.com/fichiers/2018/14/3/1522858369-icon-60-3x.png)
 
-For iPhones, from iOS 9.0 
-TL;DR : Click on this link from your iDevice to download and install the app : 
+TL;DR : Click on this link from your iDevice to download and install the app : http://diawi.com/ADFTEF
+
+***To install this map, you must first authorise the installation of foreigns application. Go to your Settings -> General -> Profils and click on INEAT Conseil Distribution -> Allow installation.***
 
 # What's LocateMe?!
 
-LocateMe is as simple as that, it locates you. Thanks to **MapBox** Framework, you can easily geolocate yourself and geocode your position, simply drag and pinch the map to the desired location to get its address. 
+For iPhones, from iOS 9.0, LocateMe is as simple as that, it locates you. Thanks to **MapBox** Framework, you can easily geolocate yourself and geocode your position, simply drag and pinch the map to the desired location to get its address. 
 
 # Technically
 
@@ -47,7 +48,8 @@ https://github.com/realm/realm-cocoa
 https://fastlane.tools
 https://jenkins.io
 
-
+- **Tests** : The tests need to be develop with the new features. Sure you can add some UI Tests and Unit tests, but be sure to keep track of them and their consistencies. In this project, only few methods are tested but you will want to fully secure your most important manager classes. 
+ 
 ## Contributors
 
 David Fafinski : Developer
