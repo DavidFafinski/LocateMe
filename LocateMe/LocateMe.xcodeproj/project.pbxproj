@@ -15,6 +15,28 @@
 		252D4E6220750AAB00603865 /* MapboxContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E6120750AAB00603865 /* MapboxContainer.swift */; };
 		252D4E6520751BEC00603865 /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E6420751BEC00603865 /* PlaceTests.swift */; };
 		252D4E6620751DFC00603865 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF892073DB5600ADE45F /* Place.swift */; };
+		252D4E682076080E00603865 /* PlaceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E672076080E00603865 /* PlaceManagerTests.swift */; };
+		252D4E69207609C300603865 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF872073DA0500ADE45F /* PlaceManager.swift */; };
+		252D4E6A207609CB00603865 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8B2073DE2100ADE45F /* DataManager.swift */; };
+		252D4E6B20760AC900603865 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569B3462073996600B70A5E /* MapViewController.swift */; };
+		252D4E6C20760ACB00603865 /* MapViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E5F207509A400603865 /* MapViewContainer.swift */; };
+		252D4E6D20760ACE00603865 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF852073D69B00ADE45F /* PlaceTableViewCell.swift */; };
+		252D4E6E20760AD100603865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569B3442073996600B70A5E /* AppDelegate.swift */; };
+		252D4E6F20760AD400603865 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8D2074DB1500ADE45F /* Constants.swift */; };
+		252D4E732076386F00603865 /* PlaceMapboxServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E4C2074F34600603865 /* PlaceMapboxServices.swift */; };
+		252D4E742076387200603865 /* PlaceUserDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E4F2074F45100603865 /* PlaceUserDefaultStorage.swift */; };
+		252D4E752076387D00603865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569B3482073996600B70A5E /* Main.storyboard */; };
+		252D4E762076387F00603865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569B34D2073996600B70A5E /* LaunchScreen.storyboard */; };
+		252D4E772076388500603865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250B31852073C23200707AEB /* Assets.xcassets */; };
+		2532225C207639A500ACDA74 /* MapboxGeocoder.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 2532225B207639A400ACDA74 /* MapboxGeocoder.swift */; };
+		25322260207639D800ACDA74 /* Pods_LocateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */; };
+		25322264207639FA00ACDA74 /* MapboxGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25322263207639FA00ACDA74 /* MapboxGeocoder.framework */; };
+		2532226520763A0D00ACDA74 /* MapboxGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25322263207639FA00ACDA74 /* MapboxGeocoder.framework */; };
+		253222662076407500ACDA74 /* MapboxContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4E6120750AAB00603865 /* MapboxContainer.swift */; };
+		2532227C20765B5700ACDA74 /* LocateMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2532227B20765B5700ACDA74 /* LocateMeUITests.swift */; };
+		2532227E20765C4D00ACDA74 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2532227D20765C4D00ACDA74 /* UIView+Utils.swift */; };
+		2532227F20765C4D00ACDA74 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2532227D20765C4D00ACDA74 /* UIView+Utils.swift */; };
+		2532228020765C4D00ACDA74 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2532227D20765C4D00ACDA74 /* UIView+Utils.swift */; };
 		2569B3452073996600B70A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569B3442073996600B70A5E /* AppDelegate.swift */; };
 		2569B3472073996600B70A5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569B3462073996600B70A5E /* MapViewController.swift */; };
 		2569B34A2073996600B70A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569B3482073996600B70A5E /* Main.storyboard */; };
@@ -24,11 +46,19 @@
 		25A2BF8A2073DB5600ADE45F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF892073DB5600ADE45F /* Place.swift */; };
 		25A2BF8C2073DE2100ADE45F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8B2073DE2100ADE45F /* DataManager.swift */; };
 		25A2BF8E2074DB1500ADE45F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2BF8D2074DB1500ADE45F /* Constants.swift */; };
-		B75D6A7CFE74D7FB194C1B92 /* Pods_LocateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */; };
+		65A804BF6EC281AAB98A03A0 /* Pods_LocateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */; };
+		8ED2DBFC20BD4A9538D899E8 /* Pods_LocateMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B10FD2706FB5FA095931A06 /* Pods_LocateMeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		252D4E5A2075071B00603865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2569B3392073996600B70A5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2569B3402073996600B70A5E;
+			remoteInfo = LocateMe;
+		};
+		2532227620765B0200ACDA74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2569B3392073996600B70A5E /* Project object */;
 			proxyType = 1;
@@ -48,6 +78,17 @@
 		252D4E5F207509A400603865 /* MapViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewContainer.swift; sourceTree = "<group>"; };
 		252D4E6120750AAB00603865 /* MapboxContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxContainer.swift; sourceTree = "<group>"; };
 		252D4E6420751BEC00603865 /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
+		252D4E672076080E00603865 /* PlaceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManagerTests.swift; sourceTree = "<group>"; };
+		252D4E712076378800603865 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		253222592076396800ACDA74 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2532225B207639A400ACDA74 /* MapboxGeocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MapboxGeocoder.swift; path = "../../../Library/Developer/Xcode/DerivedData/LocateMe-ezcoulsvzfuvpncnqyelwhvlaahc/Build/Products/Debug-iphoneos/MapboxGeocoder.swift"; sourceTree = "<group>"; };
+		2532225D207639B600ACDA74 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25322261207639EE00ACDA74 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25322263207639FA00ACDA74 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxGeocoder.framework; path = "../../../Library/Developer/Xcode/DerivedData/LocateMe-ezcoulsvzfuvpncnqyelwhvlaahc/Build/Products/Debug-iphoneos/MapboxGeocoder.swift/MapboxGeocoder.framework"; sourceTree = "<group>"; };
+		2532227120765B0200ACDA74 /* LocateMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocateMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2532227520765B0200ACDA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2532227B20765B5700ACDA74 /* LocateMeUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocateMeUITests.swift; sourceTree = "<group>"; };
+		2532227D20765C4D00ACDA74 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		2569B3412073996600B70A5E /* LocateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2569B3442073996600B70A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2569B3462073996600B70A5E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -60,11 +101,24 @@
 		25A2BF8B2073DE2100ADE45F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		25A2BF8D2074DB1500ADE45F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E437FBA6D0C5AB2484528FF /* Pods-LocateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocateMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocateMe/Pods-LocateMe.debug.xcconfig"; sourceTree = "<group>"; };
+		4B10FD2706FB5FA095931A06 /* Pods_LocateMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocateMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocateMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31CBB63C8D8C8C661220515 /* Pods-LocateMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocateMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD66C0FE2F818C380C352A4F /* Pods-LocateMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocateMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		252D4E522075071A00603865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25322260207639D800ACDA74 /* Pods_LocateMe.framework in Frameworks */,
+				25322264207639FA00ACDA74 /* MapboxGeocoder.framework in Frameworks */,
+				8ED2DBFC20BD4A9538D899E8 /* Pods_LocateMeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2532226E20765B0200ACDA74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,7 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75D6A7CFE74D7FB194C1B92 /* Pods_LocateMe.framework in Frameworks */,
+				2532226520763A0D00ACDA74 /* MapboxGeocoder.framework in Frameworks */,
+				65A804BF6EC281AAB98A03A0 /* Pods_LocateMe.framework in Frameworks */,
+				2532225C207639A500ACDA74 /* MapboxGeocoder.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +191,7 @@
 			children = (
 				252D4E572075071B00603865 /* LocateMeTests.swift */,
 				252D4E6420751BEC00603865 /* PlaceTests.swift */,
+				252D4E672076080E00603865 /* PlaceManagerTests.swift */,
 				252D4E592075071B00603865 /* Info.plist */,
 			);
 			path = LocateMeTests;
@@ -148,11 +205,29 @@
 			path = Mapbox;
 			sourceTree = "<group>";
 		};
+		2532227220765B0200ACDA74 /* LocateMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2532227B20765B5700ACDA74 /* LocateMeUITests.swift */,
+				2532227520765B0200ACDA74 /* Info.plist */,
+			);
+			path = LocateMeUITests;
+			sourceTree = "<group>";
+		};
+		2532228120765C5100ACDA74 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2532227D20765C4D00ACDA74 /* UIView+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		2569B3382073996600B70A5E = {
 			isa = PBXGroup;
 			children = (
 				2569B3432073996600B70A5E /* LocateMe */,
 				252D4E562075071B00603865 /* LocateMeTests */,
+				2532227220765B0200ACDA74 /* LocateMeUITests */,
 				2569B3422073996600B70A5E /* Products */,
 				9BAB723A19FF1A161837517D /* Pods */,
 				8742DF3863CEA831EF220AE0 /* Frameworks */,
@@ -164,6 +239,7 @@
 			children = (
 				2569B3412073996600B70A5E /* LocateMe.app */,
 				252D4E552075071A00603865 /* LocateMeTests.xctest */,
+				2532227120765B0200ACDA74 /* LocateMeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +249,7 @@
 			children = (
 				25A2BF8D2074DB1500ADE45F /* Constants.swift */,
 				2569B3442073996600B70A5E /* AppDelegate.swift */,
+				2532228120765C5100ACDA74 /* Utils */,
 				252D4E482074F0F400603865 /* DataManager */,
 				252D4E4A2074F11800603865 /* ViewControllers */,
 				2569B34D2073996600B70A5E /* LaunchScreen.storyboard */,
@@ -185,7 +262,14 @@
 		8742DF3863CEA831EF220AE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25322261207639EE00ACDA74 /* MapboxGeocoder.framework */,
+				2532225D207639B600ACDA74 /* MapboxGeocoder.framework */,
+				25322263207639FA00ACDA74 /* MapboxGeocoder.framework */,
+				2532225B207639A400ACDA74 /* MapboxGeocoder.swift */,
+				253222592076396800ACDA74 /* MapboxGeocoder.framework */,
+				252D4E712076378800603865 /* MapboxGeocoder.framework */,
 				98A3A01EA3B03C234D02AA17 /* Pods_LocateMe.framework */,
+				4B10FD2706FB5FA095931A06 /* Pods_LocateMeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +279,8 @@
 			children = (
 				2E437FBA6D0C5AB2484528FF /* Pods-LocateMe.debug.xcconfig */,
 				01DF029AD5EA336D5D131AAE /* Pods-LocateMe.release.xcconfig */,
+				AD66C0FE2F818C380C352A4F /* Pods-LocateMeTests.debug.xcconfig */,
+				A31CBB63C8D8C8C661220515 /* Pods-LocateMeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -206,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 252D4E5C2075071B00603865 /* Build configuration list for PBXNativeTarget "LocateMeTests" */;
 			buildPhases = (
+				4AB08D5B1D11788684613991 /* [CP] Check Pods Manifest.lock */,
 				252D4E512075071A00603865 /* Sources */,
-				252D4E522075071A00603865 /* Frameworks */,
 				252D4E532075071A00603865 /* Resources */,
+				252D4E522075071A00603865 /* Frameworks */,
+				EF01966050EFE604BF11DE58 /* [CP] Embed Pods Frameworks */,
+				F29348A5C4A7C7BA6EEA3DBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +308,24 @@
 			productName = LocateMeTests;
 			productReference = 252D4E552075071A00603865 /* LocateMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2532227020765B0200ACDA74 /* LocateMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2532227820765B0200ACDA74 /* Build configuration list for PBXNativeTarget "LocateMeUITests" */;
+			buildPhases = (
+				2532226D20765B0200ACDA74 /* Sources */,
+				2532226E20765B0200ACDA74 /* Frameworks */,
+				2532226F20765B0200ACDA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2532227720765B0200ACDA74 /* PBXTargetDependency */,
+			);
+			name = LocateMeUITests;
+			productName = LocateMeUITests;
+			productReference = 2532227120765B0200ACDA74 /* LocateMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		2569B3402073996600B70A5E /* LocateMe */ = {
 			isa = PBXNativeTarget;
@@ -255,6 +362,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2569B3402073996600B70A5E;
 					};
+					2532227020765B0200ACDA74 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2569B3402073996600B70A5E;
+					};
 					2569B3402073996600B70A5E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -276,12 +388,23 @@
 			targets = (
 				2569B3402073996600B70A5E /* LocateMe */,
 				252D4E542075071A00603865 /* LocateMeTests */,
+				2532227020765B0200ACDA74 /* LocateMeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		252D4E532075071A00603865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252D4E752076387D00603865 /* Main.storyboard in Resources */,
+				252D4E772076388500603865 /* Assets.xcassets in Resources */,
+				252D4E762076387F00603865 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2532226F20765B0200ACDA74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,6 +457,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocateMe/Pods-LocateMe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4AB08D5B1D11788684613991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocateMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		909470F6666ECAB40216E7C8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +497,43 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocateMe/Pods-LocateMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EF01966050EFE604BF11DE58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift/MapboxGeocoder.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxGeocoder.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F29348A5C4A7C7BA6EEA3DBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,9 +541,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252D4E732076386F00603865 /* PlaceMapboxServices.swift in Sources */,
 				252D4E6620751DFC00603865 /* Place.swift in Sources */,
+				252D4E6F20760AD400603865 /* Constants.swift in Sources */,
+				252D4E6A207609CB00603865 /* DataManager.swift in Sources */,
+				252D4E6D20760ACE00603865 /* PlaceTableViewCell.swift in Sources */,
+				252D4E682076080E00603865 /* PlaceManagerTests.swift in Sources */,
 				252D4E582075071B00603865 /* LocateMeTests.swift in Sources */,
+				2532227F20765C4D00ACDA74 /* UIView+Utils.swift in Sources */,
 				252D4E6520751BEC00603865 /* PlaceTests.swift in Sources */,
+				253222662076407500ACDA74 /* MapboxContainer.swift in Sources */,
+				252D4E6C20760ACB00603865 /* MapViewContainer.swift in Sources */,
+				252D4E69207609C300603865 /* PlaceManager.swift in Sources */,
+				252D4E742076387200603865 /* PlaceUserDefaultStorage.swift in Sources */,
+				252D4E6E20760AD100603865 /* AppDelegate.swift in Sources */,
+				252D4E6B20760AC900603865 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2532226D20765B0200ACDA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2532228020765C4D00ACDA74 /* UIView+Utils.swift in Sources */,
+				2532227C20765B5700ACDA74 /* LocateMeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +582,7 @@
 				252D4E502074F45100603865 /* PlaceUserDefaultStorage.swift in Sources */,
 				25A2BF8E2074DB1500ADE45F /* Constants.swift in Sources */,
 				25A2BF862073D69B00ADE45F /* PlaceTableViewCell.swift in Sources */,
+				2532227E20765C4D00ACDA74 /* UIView+Utils.swift in Sources */,
 				25A2BF8A2073DB5600ADE45F /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +594,11 @@
 			isa = PBXTargetDependency;
 			target = 2569B3402073996600B70A5E /* LocateMe */;
 			targetProxy = 252D4E5A2075071B00603865 /* PBXContainerItemProxy */;
+		};
+		2532227720765B0200ACDA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2569B3402073996600B70A5E /* LocateMe */;
+			targetProxy = 2532227620765B0200ACDA74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,6 +624,7 @@
 /* Begin XCBuildConfiguration section */
 		252D4E5D2075071B00603865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD66C0FE2F818C380C352A4F /* Pods-LocateMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -437,6 +643,7 @@
 		};
 		252D4E5E2075071B00603865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31CBB63C8D8C8C661220515 /* Pods-LocateMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -450,6 +657,40 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocateMe.app/LocateMe";
+			};
+			name = Release;
+		};
+		2532227920765B0200ACDA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q3BACUGPF;
+				INFOPLIST_FILE = LocateMeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ineat.LocateMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocateMe;
+			};
+			name = Debug;
+		};
+		2532227A20765B0200ACDA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q3BACUGPF;
+				INFOPLIST_FILE = LocateMeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ineat.LocateMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocateMe;
 			};
 			name = Release;
 		};
@@ -606,6 +847,15 @@
 			buildConfigurations = (
 				252D4E5D2075071B00603865 /* Debug */,
 				252D4E5E2075071B00603865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2532227820765B0200ACDA74 /* Build configuration list for PBXNativeTarget "LocateMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2532227920765B0200ACDA74 /* Debug */,
+				2532227A20765B0200ACDA74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

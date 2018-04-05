@@ -46,7 +46,9 @@ class PlaceManager  {
     }
 
     func savePlace(place: Place) {
-        _placeDAL.savePlace(place: place)
+        if(place.printableCity != "") {
+            _placeDAL.savePlace(place: place)
+        }
     }
 
     func getSavedPlaces() -> [Place] {

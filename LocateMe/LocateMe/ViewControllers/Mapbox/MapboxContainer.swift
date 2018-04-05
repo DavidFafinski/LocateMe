@@ -18,6 +18,7 @@ class MapboxContainer : NSObject, MGLMapViewDelegate {
     required init(view: UIView, delegate: MapViewContainer) {
         super.init()
         mapboxView = MGLMapView(frame: view.bounds, styleURL:URL(string: kURLStringMapBox))
+        mapboxView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapboxView.delegate = self
         _delegate = delegate
     }

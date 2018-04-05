@@ -9,3 +9,8 @@ target 'LocateMe' do
     use_frameworks!
 	locateMePods
 end
+
+target 'LocateMeTests' do
+    use_frameworks!
+    locateMePods
+end

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -57,7 +56,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-Cx-ehN">
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="pin" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-Cx-ehN">
                                 <rect key="frame" x="173" y="323.5" width="28" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="EJf-ca-hyf"/>
@@ -65,10 +64,10 @@
                                 </constraints>
                             </imageView>
                             <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ix-EO-X3q" userLabel="TableView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j45-q8-QPJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="90" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="66" id="yPq-tM-KY5" customClass="PlaceTableViewCell" customModule="LocateMe" customModuleProvider="target">
@@ -107,7 +106,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" priority="750" id="3yG-bk-N1k"/>
                                     <constraint firstItem="j45-q8-QPJ" firstAttribute="leading" secondItem="0Ix-EO-X3q" secondAttribute="leading" id="BG2-n1-u7Z"/>
-                                    <constraint firstItem="j45-q8-QPJ" firstAttribute="top" secondItem="0Ix-EO-X3q" secondAttribute="top" priority="200" constant="92" id="UWO-rI-yMj"/>
                                     <constraint firstAttribute="bottom" secondItem="j45-q8-QPJ" secondAttribute="bottom" id="VCS-Ea-xgL"/>
                                     <constraint firstAttribute="trailing" secondItem="j45-q8-QPJ" secondAttribute="trailing" id="WAz-kk-fSS"/>
                                 </constraints>
@@ -167,28 +165,28 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2lX-5g-0it" secondAttribute="trailing" constant="20" id="CbX-Vi-cLZ"/>
                             <constraint firstItem="5sY-Cx-ehN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GXL-Og-Ric"/>
-                            <constraint firstItem="iv7-1T-S1L" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hq5-PW-VMR"/>
                             <constraint firstItem="iv7-1T-S1L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L5p-0h-8bp"/>
                             <constraint firstItem="YOy-Ux-lEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="NBf-bz-FLd"/>
                             <constraint firstItem="2lX-5g-0it" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="R3q-Pd-X3Q"/>
                             <constraint firstItem="iv7-1T-S1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XOx-w7-AWd"/>
-                            <constraint firstItem="0Ix-EO-X3q" firstAttribute="top" secondItem="iv7-1T-S1L" secondAttribute="top" id="YD1-nJ-KTO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Gx-Xp-srz" secondAttribute="trailing" constant="20" id="dxN-C9-Q9Y"/>
                             <constraint firstItem="2lX-5g-0it" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="100" constant="70" id="fKx-Wr-Q15"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ix-EO-X3q" secondAttribute="trailing" id="fYS-iN-C5V"/>
+                            <constraint firstAttribute="bottom" secondItem="iv7-1T-S1L" secondAttribute="bottom" id="fgo-LX-lGy"/>
                             <constraint firstItem="5sY-Cx-ehN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gz9-hH-mnA"/>
                             <constraint firstItem="YOy-Ux-lEB" firstAttribute="centerY" secondItem="2lX-5g-0it" secondAttribute="centerY" id="hno-T2-C7N"/>
+                            <constraint firstItem="0Ix-EO-X3q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nSg-RR-DgL"/>
                             <constraint firstItem="iv7-1T-S1L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p7S-UG-cYZ"/>
                             <constraint firstItem="0Ix-EO-X3q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="pWW-O1-Dlf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Gx-Xp-srz" secondAttribute="bottom" constant="60" id="q7P-kI-n0d"/>
                             <constraint firstItem="0Ix-EO-X3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="siv-hM-D6C"/>
                             <constraint firstItem="2lX-5g-0it" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="900" constant="15" id="sqc-Dh-jN9"/>
+                            <constraint firstItem="j45-q8-QPJ" firstAttribute="top" secondItem="2lX-5g-0it" secondAttribute="top" constant="60" id="vtc-zP-Q1c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backViewButton" destination="YOy-Ux-lEB" id="FJT-PW-Wjz"/>
-                        <outlet property="centerPin" destination="5sY-Cx-ehN" id="UeD-Ur-QHP"/>
                         <outlet property="heightTableViewHideConstraint" destination="3yG-bk-N1k" id="aKt-ef-Q9O"/>
                         <outlet property="heightTableViewShownConstraint" destination="pWW-O1-Dlf" id="x61-uM-SBY"/>
                         <outlet property="leftSearchWithBackConstraint" destination="fKx-Wr-Q15" id="m2d-lC-4Uo"/>

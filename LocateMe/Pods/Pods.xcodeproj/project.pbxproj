@@ -12,14 +12,17 @@
 		2FC172659AD0B06EE303095018B8FE32 /* MBGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E20F1B599F803D9DB732D34D1A9204 /* MBGeocoder.swift */; };
 		5657D7ADE2E299CCDC0D37AA58CBC45A /* MapboxGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6958922F7C326387C78F17D2F9843ACE /* MapboxGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E2E9AF2FBDEBFAFC59977CD52B65605 /* MapboxGeocoder.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BC941F74660C79906199BFCBEA0803 /* MapboxGeocoder.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64942C3D2C8A4D5BE421D328A0837065 /* Pods-LocateMeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EC5DA47449E028D12C378CBA5B917A /* Pods-LocateMeTests-dummy.m */; };
+		6D17950090F89403FAD2AE815764C635 /* Pods-LocateMeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E813990CD785FF2018B0E6C9F6A7C01 /* Pods-LocateMeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EA3C2426AE10DF2E40867C326775B8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		717D0FA41FAA84E3FFFE0F72843F3CE2 /* MapboxGeocoder.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8758B144970873B32B1B185EF647187A /* MapboxGeocoder.swift-dummy.m */; };
-		8964EAC2EB23E8930388A01756F78B87 /* Pods-LocateMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF71E407554756B97A116DE2DFD520D /* Pods-LocateMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8964EAC2EB23E8930388A01756F78B87 /* Pods-LocateMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E2177772D181E6BD4E65EB4E80625E /* Pods-LocateMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89B42321680F9E126DD513BE66AD5374 /* MBPlacemarkScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B3604B95DE529A15EFDE17B4B2DCE2 /* MBPlacemarkScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91410BF0F2921351B2F994E3EBA05B14 /* MBRectangularRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062CE1C2D7FC8E778E76DC502AC7D07 /* MBRectangularRegion.swift */; };
 		B04F835CC9C7F3339E9061DB2DD2A090 /* MBGeocodeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87EE0649E09523DE5FE7BE68F599F7 /* MBGeocodeOptions.swift */; };
 		D5E387436C8A8DA3D31998749BF6F3DF /* MBPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6498F4F5F857836E50EE3D3C137C32D /* MBPlacemark.swift */; };
 		E5E7BAEA9FBB1C12A79F59FBB05B0912 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FEA938A22668BAB0DDB620705B6EF71E /* Pods-LocateMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321DB39916C96532AD5DA33A038F807 /* Pods-LocateMe-dummy.m */; };
+		FEA938A22668BAB0DDB620705B6EF71E /* Pods-LocateMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3FAF895584885EC3173640B93AF92 /* Pods-LocateMe-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,40 +33,66 @@
 			remoteGlobalIDString = F3B0D303D1E2FEEE382F99CB69B2053C;
 			remoteInfo = MapboxGeocoder.swift;
 		};
+		EF11A8910F4B89387E3E1D3EF0AF110E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B0D303D1E2FEEE382F99CB69B2053C;
+			remoteInfo = MapboxGeocoder.swift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0321DB39916C96532AD5DA33A038F807 /* Pods-LocateMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocateMe-dummy.m"; sourceTree = "<group>"; };
-		0602347536BF6D17499AF9F6CE5F3D8A /* Pods-LocateMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocateMe-acknowledgements.plist"; sourceTree = "<group>"; };
+		00FC479225BBE2D2B0A1D0636FA5B15B /* Pods-LocateMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		06FB774CBE24B0596F9DEF0E56AA125A /* Pods-LocateMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateMe-resources.sh"; sourceTree = "<group>"; };
 		097AF61DE6F9155A484D4E3337717853 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BD3FAF895584885EC3173640B93AF92 /* Pods-LocateMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocateMe-dummy.m"; sourceTree = "<group>"; };
 		12B3604B95DE529A15EFDE17B4B2DCE2 /* MBPlacemarkScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPlacemarkScope.h; path = MapboxGeocoder/MBPlacemarkScope.h; sourceTree = "<group>"; };
-		33B76D08F3BBCF89B8C35A52A03C5C80 /* Pods-LocateMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateMe-resources.sh"; sourceTree = "<group>"; };
+		15EC5DA47449E028D12C378CBA5B917A /* Pods-LocateMeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocateMeTests-dummy.m"; sourceTree = "<group>"; };
+		18A2FDE09C766FE009513324108A2E12 /* Pods-LocateMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocateMe.modulemap"; sourceTree = "<group>"; };
+		31F7857FF67FBE99BA643D83353962E5 /* Pods-LocateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateMe.debug.xcconfig"; sourceTree = "<group>"; };
 		4D2B9553855188353CC20E28D68176C2 /* MapboxGeocoder.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxGeocoder.swift-prefix.pch"; sourceTree = "<group>"; };
-		5FF71E407554756B97A116DE2DFD520D /* Pods-LocateMe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocateMe-umbrella.h"; sourceTree = "<group>"; };
-		641C820EE1FB87917DB731F909200434 /* Pods-LocateMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateMe.release.xcconfig"; sourceTree = "<group>"; };
+		5E813990CD785FF2018B0E6C9F6A7C01 /* Pods-LocateMeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocateMeTests-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6715388E5DDEF45EDABC90ACAA4094B8 /* MapboxGeocoder.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxGeocoder.swift.xcconfig; sourceTree = "<group>"; };
 		6958922F7C326387C78F17D2F9843ACE /* MapboxGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxGeocoder.h; path = MapboxGeocoder/MapboxGeocoder.h; sourceTree = "<group>"; };
 		6D87EE0649E09523DE5FE7BE68F599F7 /* MBGeocodeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeocodeOptions.swift; path = MapboxGeocoder/MBGeocodeOptions.swift; sourceTree = "<group>"; };
+		718E26672C42599EAC66BC32719A7449 /* Pods-LocateMe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateMe-frameworks.sh"; sourceTree = "<group>"; };
+		73A3CA98E88C261002B61C99B6EE4722 /* Pods-LocateMeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocateMeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B8C4E8F5B04D203725485DE49A24C60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8062CE1C2D7FC8E778E76DC502AC7D07 /* MBRectangularRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRectangularRegion.swift; path = MapboxGeocoder/MBRectangularRegion.swift; sourceTree = "<group>"; };
 		8758B144970873B32B1B185EF647187A /* MapboxGeocoder.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxGeocoder.swift-dummy.m"; sourceTree = "<group>"; };
 		8DF547F4E484AFE1C3945644B5261E8B /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2FB938C85E00D105539518F008F20E4 /* Pods-LocateMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocateMe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98E2177772D181E6BD4E65EB4E80625E /* Pods-LocateMe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocateMe-umbrella.h"; sourceTree = "<group>"; };
+		9A394D840E31BCA9776CD7BAA518C052 /* Pods-LocateMeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateMeTests-frameworks.sh"; sourceTree = "<group>"; };
 		A6BC941F74660C79906199BFCBEA0803 /* MapboxGeocoder.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxGeocoder.swift-umbrella.h"; sourceTree = "<group>"; };
-		A810B69B9682749E4FC5F153E91A89E6 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxGeocoder.framework; path = MapboxGeocoder.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB26E08712D48492DC4C7143B3DE3594 /* Pods-LocateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateMe.debug.xcconfig"; sourceTree = "<group>"; };
-		BD2C0B605E5173175A4B00532CFE7A7B /* Pods_LocateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocateMe.framework; path = "Pods-LocateMe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C49E02699B5E46A8027037B031B76C61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D72F4030D4D46A2A30792DF815FF57 /* Pods-LocateMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B500296FFB04986F866E2DEC9228FD44 /* Pods-LocateMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocateMe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B65C07AC0A0700E0C9FBE0AFF2D3F492 /* Pods-LocateMeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocateMeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6B66196C42852C92216B08F19A30815 /* Pods_LocateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocateMe.framework; path = "Pods-LocateMe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6498F4F5F857836E50EE3D3C137C32D /* MBPlacemark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlacemark.swift; path = MapboxGeocoder/MBPlacemark.swift; sourceTree = "<group>"; };
-		C6B7E9A7D8A6C1F2826299DFB73C31AE /* Pods-LocateMe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateMe-frameworks.sh"; sourceTree = "<group>"; };
+		C92E283A0BF6E475763C8D357B8389D0 /* Pods_LocateMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocateMeTests.framework; path = "Pods-LocateMeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A417D2BBAA032702FF78D51533ADAE /* Pods-LocateMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateMe.release.xcconfig"; sourceTree = "<group>"; };
+		CC40A80D2E398733975717D5CB2CBEBA /* Pods-LocateMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocateMe-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEFC35B70782E891C3DF0C9DF59FB9F5 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxGeocoder.framework; path = MapboxGeocoder.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CF7E241479462EB7DD3D03CC4A31F0 /* MapboxGeocoder.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxGeocoder.swift.modulemap; sourceTree = "<group>"; };
 		DC67A135BE796E009AEB7567CF3354A5 /* MBPlacemarkScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlacemarkScope.swift; path = MapboxGeocoder/MBPlacemarkScope.swift; sourceTree = "<group>"; };
-		EEE814926BFEE09232136DE9634787DA /* Pods-LocateMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocateMe.modulemap"; sourceTree = "<group>"; };
+		F0C709BF3711490DFE986AD87BC14F03 /* Pods-LocateMeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateMeTests-resources.sh"; sourceTree = "<group>"; };
+		F3D2E561DF0C32F42CE763A8BC697BCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7E20F1B599F803D9DB732D34D1A9204 /* MBGeocoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeocoder.swift; path = MapboxGeocoder/MBGeocoder.swift; sourceTree = "<group>"; };
+		F932B46A7A2818ECF971564A24ED2277 /* Pods-LocateMeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocateMeTests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		627E6309428EEBB062161285830C9194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA3C2426AE10DF2E40867C326775B8F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0AB86651CC8166E5213C4864D239D87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +128,24 @@
 			path = MapboxGeocoder.swift;
 			sourceTree = "<group>";
 		};
+		1D37B85035776B1F5BD9BFF2D5D55D56 /* Pods-LocateMe */ = {
+			isa = PBXGroup;
+			children = (
+				F3D2E561DF0C32F42CE763A8BC697BCD /* Info.plist */,
+				18A2FDE09C766FE009513324108A2E12 /* Pods-LocateMe.modulemap */,
+				B500296FFB04986F866E2DEC9228FD44 /* Pods-LocateMe-acknowledgements.markdown */,
+				CC40A80D2E398733975717D5CB2CBEBA /* Pods-LocateMe-acknowledgements.plist */,
+				0BD3FAF895584885EC3173640B93AF92 /* Pods-LocateMe-dummy.m */,
+				718E26672C42599EAC66BC32719A7449 /* Pods-LocateMe-frameworks.sh */,
+				06FB774CBE24B0596F9DEF0E56AA125A /* Pods-LocateMe-resources.sh */,
+				98E2177772D181E6BD4E65EB4E80625E /* Pods-LocateMe-umbrella.h */,
+				31F7857FF67FBE99BA643D83353962E5 /* Pods-LocateMe.debug.xcconfig */,
+				C9A417D2BBAA032702FF78D51533ADAE /* Pods-LocateMe.release.xcconfig */,
+			);
+			name = "Pods-LocateMe";
+			path = "Target Support Files/Pods-LocateMe";
+			sourceTree = "<group>";
+		};
 		6482CB1E4054F0488C7E23B6778B3F0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +174,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				8C64DF29952A4C61234CE6243F8E467F /* Pods */,
-				AA14B5894684C19D0F1FCEFF389942FE /* Products */,
-				F995F7A19E286CADA55D17D51E96FCC9 /* Targets Support Files */,
+				EFD7EC9179E69F88447A5D67431E3BA5 /* Products */,
+				C97184CBCD9B252C92A51723F5DB0BC1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,33 +186,6 @@
 				172A4A382E1662A390EB35DFD61A34DE /* MapboxGeocoder.swift */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A1EF09310D40F8C0A83F91E36DFECE1A /* Pods-LocateMe */ = {
-			isa = PBXGroup;
-			children = (
-				C49E02699B5E46A8027037B031B76C61 /* Info.plist */,
-				EEE814926BFEE09232136DE9634787DA /* Pods-LocateMe.modulemap */,
-				A2FB938C85E00D105539518F008F20E4 /* Pods-LocateMe-acknowledgements.markdown */,
-				0602347536BF6D17499AF9F6CE5F3D8A /* Pods-LocateMe-acknowledgements.plist */,
-				0321DB39916C96532AD5DA33A038F807 /* Pods-LocateMe-dummy.m */,
-				C6B7E9A7D8A6C1F2826299DFB73C31AE /* Pods-LocateMe-frameworks.sh */,
-				33B76D08F3BBCF89B8C35A52A03C5C80 /* Pods-LocateMe-resources.sh */,
-				5FF71E407554756B97A116DE2DFD520D /* Pods-LocateMe-umbrella.h */,
-				AB26E08712D48492DC4C7143B3DE3594 /* Pods-LocateMe.debug.xcconfig */,
-				641C820EE1FB87917DB731F909200434 /* Pods-LocateMe.release.xcconfig */,
-			);
-			name = "Pods-LocateMe";
-			path = "Target Support Files/Pods-LocateMe";
-			sourceTree = "<group>";
-		};
-		AA14B5894684C19D0F1FCEFF389942FE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A810B69B9682749E4FC5F153E91A89E6 /* MapboxGeocoder.framework */,
-				BD2C0B605E5173175A4B00532CFE7A7B /* Pods_LocateMe.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B55E463AC17D1C54A19BF132E046D126 /* Mapbox-iOS-SDK */ = {
@@ -185,6 +205,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C97184CBCD9B252C92A51723F5DB0BC1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D37B85035776B1F5BD9BFF2D5D55D56 /* Pods-LocateMe */,
+				DE6D3ECAC7393E216099D4094DE85DE1 /* Pods-LocateMeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,12 +222,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F995F7A19E286CADA55D17D51E96FCC9 /* Targets Support Files */ = {
+		DE6D3ECAC7393E216099D4094DE85DE1 /* Pods-LocateMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1EF09310D40F8C0A83F91E36DFECE1A /* Pods-LocateMe */,
+				7B8C4E8F5B04D203725485DE49A24C60 /* Info.plist */,
+				F932B46A7A2818ECF971564A24ED2277 /* Pods-LocateMeTests.modulemap */,
+				B65C07AC0A0700E0C9FBE0AFF2D3F492 /* Pods-LocateMeTests-acknowledgements.markdown */,
+				73A3CA98E88C261002B61C99B6EE4722 /* Pods-LocateMeTests-acknowledgements.plist */,
+				15EC5DA47449E028D12C378CBA5B917A /* Pods-LocateMeTests-dummy.m */,
+				9A394D840E31BCA9776CD7BAA518C052 /* Pods-LocateMeTests-frameworks.sh */,
+				F0C709BF3711490DFE986AD87BC14F03 /* Pods-LocateMeTests-resources.sh */,
+				5E813990CD785FF2018B0E6C9F6A7C01 /* Pods-LocateMeTests-umbrella.h */,
+				00FC479225BBE2D2B0A1D0636FA5B15B /* Pods-LocateMeTests.debug.xcconfig */,
+				B2D72F4030D4D46A2A30792DF815FF57 /* Pods-LocateMeTests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-LocateMeTests";
+			path = "Target Support Files/Pods-LocateMeTests";
+			sourceTree = "<group>";
+		};
+		EFD7EC9179E69F88447A5D67431E3BA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC35B70782E891C3DF0C9DF59FB9F5 /* MapboxGeocoder.framework */,
+				B6B66196C42852C92216B08F19A30815 /* Pods_LocateMe.framework */,
+				C92E283A0BF6E475763C8D357B8389D0 /* Pods_LocateMeTests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +271,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F371F857FD29456A7F455F877A59B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D17950090F89403FAD2AE815764C635 /* Pods-LocateMeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -240,7 +297,25 @@
 			);
 			name = "Pods-LocateMe";
 			productName = "Pods-LocateMe";
-			productReference = BD2C0B605E5173175A4B00532CFE7A7B /* Pods_LocateMe.framework */;
+			productReference = B6B66196C42852C92216B08F19A30815 /* Pods_LocateMe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E89C55539324C5D8AFFCD9374E9C6998 /* Pods-LocateMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C8AD9CD45A197EE01B56A84D9269ECD /* Build configuration list for PBXNativeTarget "Pods-LocateMeTests" */;
+			buildPhases = (
+				322F25D69CB970AC20A39242E6ECFC54 /* Sources */,
+				627E6309428EEBB062161285830C9194 /* Frameworks */,
+				4F371F857FD29456A7F455F877A59B6D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43C8787EB49D59829A165B92C59BED5C /* PBXTargetDependency */,
+			);
+			name = "Pods-LocateMeTests";
+			productName = "Pods-LocateMeTests";
+			productReference = C92E283A0BF6E475763C8D357B8389D0 /* Pods_LocateMeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F3B0D303D1E2FEEE382F99CB69B2053C /* MapboxGeocoder.swift */ = {
@@ -257,7 +332,7 @@
 			);
 			name = MapboxGeocoder.swift;
 			productName = MapboxGeocoder.swift;
-			productReference = A810B69B9682749E4FC5F153E91A89E6 /* MapboxGeocoder.framework */;
+			productReference = CEFC35B70782E891C3DF0C9DF59FB9F5 /* MapboxGeocoder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -277,17 +352,26 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AA14B5894684C19D0F1FCEFF389942FE /* Products */;
+			productRefGroup = EFD7EC9179E69F88447A5D67431E3BA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F3B0D303D1E2FEEE382F99CB69B2053C /* MapboxGeocoder.swift */,
 				0F419B7547E5167B840F51D4C652C627 /* Pods-LocateMe */,
+				E89C55539324C5D8AFFCD9374E9C6998 /* Pods-LocateMeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		322F25D69CB970AC20A39242E6ECFC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64942C3D2C8A4D5BE421D328A0837065 /* Pods-LocateMeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FBC1811A2912FEC4675CDC818F6705B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +396,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		43C8787EB49D59829A165B92C59BED5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapboxGeocoder.swift;
+			target = F3B0D303D1E2FEEE382F99CB69B2053C /* MapboxGeocoder.swift */;
+			targetProxy = EF11A8910F4B89387E3E1D3EF0AF110E /* PBXContainerItemProxy */;
+		};
 		51644A161992F83528127331BE925BC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MapboxGeocoder.swift;
@@ -442,9 +532,43 @@
 			};
 			name = Release;
 		};
+		2BFF88FFBCC3A3C6086E29232B3CB4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FC479225BBE2D2B0A1D0636FA5B15B /* Pods-LocateMeTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocateMeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LocateMeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		618C66D8865DDF2603791AB21F033DB3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 641C820EE1FB87917DB731F909200434 /* Pods-LocateMe.release.xcconfig */;
+			baseConfigurationReference = C9A417D2BBAA032702FF78D51533ADAE /* Pods-LocateMe.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -478,7 +602,7 @@
 		};
 		A47D81EEE93AD783AA629FB2E6D9D3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB26E08712D48492DC4C7143B3DE3594 /* Pods-LocateMe.debug.xcconfig */;
+			baseConfigurationReference = 31F7857FF67FBE99BA643D83353962E5 /* Pods-LocateMe.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -573,6 +697,40 @@
 			};
 			name = Debug;
 		};
+		EADD0D3A8046761446C4268E2959E9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D72F4030D4D46A2A30792DF815FF57 /* Pods-LocateMeTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocateMeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocateMeTests/Pods-LocateMeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LocateMeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +739,15 @@
 			buildConfigurations = (
 				1DDA23FC3F13C8F44359DA502EF1A917 /* Debug */,
 				0464FCBD017A120FD606BBB7F366711C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C8AD9CD45A197EE01B56A84D9269ECD /* Build configuration list for PBXNativeTarget "Pods-LocateMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFF88FFBCC3A3C6086E29232B3CB4DE /* Debug */,
+				EADD0D3A8046761446C4268E2959E9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

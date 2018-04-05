@@ -60,21 +60,21 @@ class Place : NSObject, NSCoding {
     }
 
     init(streetName: String, streetNumber: String, city: String, postalCode: String, longitude: Double, latitude: Double) {
-        self.streetName = streetName
-        self.streetNumber = streetNumber
-        self.city = city
-        self.postalCode = postalCode
-        self.latitude = latitude
-        self.longitude = longitude
+        self.streetName     = streetName
+        self.streetNumber   = streetNumber
+        self.city           = city
+        self.postalCode     = postalCode
+        self.latitude       = latitude
+        self.longitude      = longitude
     }
 
     init(placesDictionary: [String: Any], latitude: Double, longitude: Double) {
-        self.streetNumber = placesDictionary[kStreetNumber] as? String
-        self.streetName = placesDictionary[kStreetName] as? String
-        self.postalCode = placesDictionary[kPostalCode] as? String
-        self.city = placesDictionary[kCity] as? String
-        self.latitude = latitude
-        self.longitude = longitude
+        self.streetNumber   = placesDictionary[kStreetNumber] as? String
+        self.streetName     = placesDictionary[kStreetName] as? String
+        self.postalCode     = placesDictionary[kPostalCode] as? String
+        self.city           = placesDictionary[kCity] as? String
+        self.latitude       = latitude
+        self.longitude      = longitude
     }
 
     func encode(with aCoder: NSCoder) {
@@ -87,12 +87,12 @@ class Place : NSObject, NSCoding {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        self.streetName = aDecoder.decodeObject(forKey: kStreetName) as? String
-        self.streetNumber = aDecoder.decodeObject(forKey: kStreetNumber) as? String
-        self.postalCode = aDecoder.decodeObject(forKey: kPostalCode) as? String
-        self.city = aDecoder.decodeObject(forKey: kCity) as? String
-        self.latitude = aDecoder.decodeObject(forKey: kLatitude) as? Double
-        self.longitude = aDecoder.decodeObject(forKey: kLongitude) as? Double
+        self.streetName     = aDecoder.decodeObject(forKey: kStreetName) as? String
+        self.streetNumber   = aDecoder.decodeObject(forKey: kStreetNumber) as? String
+        self.postalCode     = aDecoder.decodeObject(forKey: kPostalCode) as? String
+        self.city           = aDecoder.decodeObject(forKey: kCity) as? String
+        self.latitude       = aDecoder.decodeObject(forKey: kLatitude) as? Double
+        self.longitude      = aDecoder.decodeObject(forKey: kLongitude) as? Double
     }
 
 

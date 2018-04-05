@@ -13,7 +13,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: UIView!
     @IBOutlet weak var backViewButton: UIView!
-    @IBOutlet weak var centerPin: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var suggestionTableView: UITableView!
     @IBOutlet weak var suggestionView: UIView!
@@ -35,10 +34,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        centerMap(latitude: nil, longitude: nil)
+        centerMap()
     }
 
+    //MARK: Location methods
+
     @IBAction func geolocateUser() {
+        centerMap()
+    }
+
+    private func centerMap() {
         centerMap(latitude: nil, longitude: nil)
     }
 
@@ -48,16 +53,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 switch CLLocationManager.authorizationStatus() {
                 case .notDetermined:
                     _locationManager.requestWhenInUseAuthorization()
+                    centerMap()
                 case .restricted, .denied:
-                    let alert = UIAlertController(title: "Attention", message: "Merci d'accéder à vos réglages afin d'autoriser le partage de la localisation.", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    let alert = UIAlertController(title: Constants.String.errorMessageTitle, message: Constants.String.askForLocationMessage, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: Constants.String.okTitle, style: .default, handler: nil))
                     present(alert, animated: true, completion: nil)
                 case .authorizedAlways, .authorizedWhenInUse:
                     _locationManager.startUpdatingLocation()
                 }
             } else {
-                let alert = UIAlertController(title: "Attention", message: "Votre géolocalisation est indisponible, merci de l'activer depuis vos réglages", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                let alert = UIAlertController(title: Constants.String.errorMessageTitle, message: Constants.String.locationUnvailableMessage, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: Constants.String.okTitle, style: .default, handler: nil))
                 present(alert, animated: true, completion: nil)
             }
         } else {
@@ -78,6 +84,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
 
     }
+
+    //MARK: Animation methods
 
     @IBAction private func hideSuggestionList() {
         view.endEditing(true)
@@ -102,26 +110,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 }
-//
-//extension MapViewController : MGLMapViewDelegate {
-//    func mapView(_ mapView: MGLMapView, regionDidChangeWith reason: MGLCameraChangeReason, animated: Bool) {
-//        dataManager.placeManager.geocodePlace(latitude: mapView.latitude, longitude: mapView.longitude) { (place) in
-//            guard let _ = place else {
-//                return
-//            }
-//            self.searchTextField.text = place!.printableAddress
-//        }
-//    }
-//
-//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-//        view.endEditing(true)
-//    }
-//
-//
-//}
 
 extension MapViewController : MapProtocol {
-
     func regionDidChange(placeName: String) {
         searchTextField.text = placeName
     }

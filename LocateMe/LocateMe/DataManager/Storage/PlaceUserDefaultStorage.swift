@@ -16,7 +16,7 @@ class PlaceUserDefaultStorage : PlaceDAL {
     func savePlace(place: Place) {
         var places = getSavedPlaces()
         if (places.count >= historyPlacesLength) {
-            places.removeLast()
+                places.removeLast() 
         }
         places.insert(place, at: 0)
         let userDefaults = UserDefaults.standard
