@@ -53,7 +53,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 switch CLLocationManager.authorizationStatus() {
                 case .notDetermined:
                     _locationManager.requestWhenInUseAuthorization()
-                    centerMap()
                 case .restricted, .denied:
                     let alert = UIAlertController(title: Constants.String.errorMessageTitle, message: Constants.String.askForLocationMessage, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: Constants.String.okTitle, style: .default, handler: nil))
@@ -75,6 +74,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         centerMap(latitude: locValue.latitude, longitude: locValue.longitude)
         _locationManager.stopUpdatingLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if (status == .authorizedWhenInUse) {
+            centerMap()
+        }
     }
 
     @objc private func searchForSuggestion() {
