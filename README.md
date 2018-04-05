@@ -51,7 +51,6 @@ https://jenkins.io
 - **Tests** : The tests need to be develop with the new features. Sure you can add some UI Tests and Unit tests, but be sure to keep track of them and their consistencies. In this project, only few methods are tested but you will want to fully secure your most important manager classes. 
 
 - **HERO** : LocateMe doesn't much view, and the navigation is pretty basic, but if you want to add some features, with other screens, I would recommand to use Hero SDK : it is a library for building iOS view controller transitions. It provides a declarative layer on top of the UIKit's cumbersome transition APIs—making custom transitions an easy task for developers.
-
 https://github.com/lkzhao/Hero
  
 ## Contributors
